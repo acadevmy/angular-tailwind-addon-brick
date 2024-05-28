@@ -1,0 +1,7 @@
+name: angular_tailwind_addon_brick
+description: The tailwind addon for Angular
+#repository: https://github.com/my_org/my_repo
+version: 0.1.2
+
+environment:
+  mason: "0.1.0-dev.53"
