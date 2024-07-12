@@ -15,5 +15,10 @@ Future<void> runPnpm({
     ['install', '-D', 'tailwindcss', 'postcss', 'autoprefixer'],
   );
 
+  await Process.run(
+    'pnpm',
+    ['exec', 'tailwindcss', 'init'],
+  );
+
   context.logger.success('🌬️ tailwind installed successfully 🚀');
 }
