@@ -1,7 +1,9 @@
 import 'dart:io';
 import 'package:mason/mason.dart';
 
-void run(HookContext context) {}
+void run(HookContext context) async {
+  await runPnpm(context: context);
+}
 
 Future<void> runPnpm({
   required HookContext context,
