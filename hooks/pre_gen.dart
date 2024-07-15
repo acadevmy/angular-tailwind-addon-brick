@@ -19,7 +19,7 @@ Future<void> runPnpm({
 
   await Process.run(
     'pnpm',
-    ['exec', 'tailwindcss', 'init'],
+    ['dlx', 'tailwindcss', 'init'],
   );
 
   context.logger.success('🌬️ tailwind installed successfully 🚀');
