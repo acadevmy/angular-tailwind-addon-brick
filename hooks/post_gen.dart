@@ -6,7 +6,9 @@ void run(HookContext context) async {
 }
 
 Future<void> updateStyleFile({required HookContext context}) async {
-  await await Process.run(
+  await Process.run('ls', ['-a']);
+
+  await Process.run(
     'sed',
     ['-i', "'1s/^/@import tailwind;\n/'", 'src/styles.scss'],
   );
