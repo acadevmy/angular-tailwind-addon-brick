@@ -6,10 +6,13 @@ void run(HookContext context) async {
 }
 
 Future<void> updateStyleFile({required HookContext context}) async {
-  await Process.run('ls', ['-a']);
+  final file = File("src/styles.scss");
+  String originalContent = await file.readAsString();
 
-  await Process.run(
-    'sed',
-    ['-i', "'1s/^/@import tailwind;\n/'", 'src/styles.scss'],
-  );
+  String tailwindImport = "@import 'tailwind';";
+  String newContent = tailwindImport + '\n' + originalContent;
+
+  await file.writeAsString(newContent);
+
+  context.logger.success('🌬️ Tailwind configured successfully 🚀');
 }
