@@ -1,5 +1,10 @@
 # angular_tailwind_brick
 
+> [!WARNING]
+> **Deprecated.** Tailwind is included in the [angular-application-brick](https://github.com/acadevmy/angular-application-brick) brick.
+>
+> Angular applications generated with the Devmy CLI already ship with Tailwind v4 (`tailwindcss`, `@tailwindcss/postcss`, `.postcssrc.json` and `@import "tailwindcss";` in `src/styles.css`). This addon targets Tailwind v3 and no longer works with the brick: the `angular/tailwind` addon has been removed from the [Devmy CLI](https://github.com/acadevmy/devmy_cli). This repository is kept for reference only and receives no further updates.
+
 [![Powered by Mason](https://img.shields.io/endpoint?url=https%3A%2F%2Ftinyurl.com%2Fmason-badge)](https://github.com/felangel/mason)
 
 A new brick created with the Mason CLI.
